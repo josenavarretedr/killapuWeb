@@ -3,17 +3,10 @@ html{
 }
 body{
 	height: 100%;
-	font-family: 'Comfortaa', cursive;
-	
-	/*background: #ECE9E6;*/  /* fallback for old browsers */
-	/*background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);   Chrome 10-25, Safari 5.1-6 */
-	/*background: linear-gradient(to top, #FFFFFF, #ECE9E6);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Roboto', cursive;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-
-
-
 }
 
 main{
@@ -21,9 +14,14 @@ main{
 }
 
 .killapu {
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Comfortaa', sans-serif;
 	font-weight: 700;
 	color: #2F80ED;
+	font-size: 4.5rem !important;
+}
+
+.slogan {
+	font-size: 3rem !important;
 }
 
 nav{
@@ -141,6 +139,52 @@ nav ul a{
     -webkit-margin-end: 0px;
 }
 
+#contactSection {
+	padding-top: 56px;
+}
+
+
+.sectionDatos i{
+	font-size: 1.9em;
+	margin-left: 20px;
+	margin-right: 50px;
+}
+
+.sectionDatos  p{
+	display: inline-block;
+	font-size: 13px;
+}
+
+
 footer{
 	font-size: 12px;
+}
+
+/*Móviles en horizontal o tablets en vertical*/
+
+@media (min-width: 600px) {
+	body {
+		/* background: red; */
+	}
+}
+
+/*Tablets en horizontal y Escritorios normales */
+
+@media (min-width: 992px) {
+	body {
+		/* background: yellow; */
+	}
+
+	#contactSection {
+		padding-top: 120px;
+	}
+
+}
+
+/*Escritorios muy anchos*/
+
+@media (min-width: 1200px) {
+	body {
+		/* background: blue; */
+	}
 }
